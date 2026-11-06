@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SnapList</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <h1>SnapList</h1>
+    <span class="tag">photos in &rarr; reviewed listings out</span>
+    <span id="health" class="health"></span>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <section class="card">
+        <h2>New batch</h2>
+        <div class="drop" id="drop">
+          <input type="file" id="files" accept="image/*" multiple hidden />
+          <button id="pickBtn" class="primary">Choose photos</button>
+          <p class="hint">or drop images here. Shoot all angles of one item together; the AI groups them and uses every photo to describe the item.</p>
+        </div>
+        <div id="preview"></div>
+      </section>
+      <section class="card">
+        <h2>Batches</h2>
+        <div id="batchList" class="batchlist"><p class="hint">Loading&hellip;</p></div>
+      </section>
+    </aside>
+
+    <main id="main">
+      <p class="hint empty">Select a batch on the left, or upload photos to start one.</p>
+    </main>
+  </div>
+
+  <div id="lightbox" class="lightbox" hidden><img alt="" /></div>
+  <div id="toast" class="toast" hidden></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+*.key
+
+# Data
+data/
+!data/.gitkeep
+
+# Photos (user content never tracked)
+photos/
+!photos/.gitkeep
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Tests
+.pytest_cache/
